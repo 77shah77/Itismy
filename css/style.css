@@ -1,0 +1,109 @@
+.preview {
+	background-image: url(../img/preview.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: overlay;
+	padding: 20em 0 17.5em 0;
+	color: white;
+}
+
+.preview p {
+	font-size: 1.5em;
+}
+
+.gallery .gallery-item {
+	margin: .25em;
+	overflow: hidden;
+}
+
+.gallery .gallery-item img {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(50%);
+	border: 3px solid transparent;
+	transition: .25s;
+	border-radius: .5em;
+}
+
+.gallery .gallery-item img:hover {
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+.career .career-item img {
+	width: 25em;
+	transition: .75s;
+	border-radius: .5em;
+	margin: 0 0 0 5.5em;
+}
+
+.career .career-item h3 {
+	margin-bottom: 1em;
+}
+
+.career .career-item:last-child {
+	padding: 0 5em;
+}
+
+.team .team-item img {
+	width: 35%;
+	margin-bottom: .5em;
+	opacity: .75;
+}
+
+.team .team-item:hover img {
+	opacity: 1;
+	transition: .25s;
+}
+
+.team .team-item span {
+	display: block;
+	margin: .25em 0;
+	font-weight: bold;
+	color: #202020;
+}
+
+.team p {
+	color: #606060;
+}
+
+.career,
+.about {
+	background-image: url(../img/preview.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: overlay;
+	color: white;
+}
+
+.career>p,
+.about>p {
+	color: white;
+}
+
+.career .career-items,
+.about .about-items .about-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about .about-items .about-item:nth-child(2) {
+	background-color: #fe6a00;
+	color: white;
+}
+
+.about p {
+	font-size: 1.25em;
+	text-align: left;
+	margin: .5em 1.5em 0 .5em;
+}
+
+.about img {
+	width: 15em;
+	height: 20em;
+}
